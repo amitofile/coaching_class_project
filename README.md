@@ -1,4 +1,4 @@
-Create NodeJS Application using ExpressJS or NestJS to perform CRUD operation for coaching class using MySQL
+Create NodeJS Application using ExpressJS to perform CRUD operation for coaching class using MySQL
 
 Problem Statement :
 1. Teachers can SignUp and Login .
