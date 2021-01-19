@@ -3,7 +3,7 @@
    "host": "localhost",
    "port": 3306,
    "username": "coach",
-   "password": "coach@123",
+   "password": "coach@123$A",
    "database": "coaching_db",
    "synchronize": true,
    "logging": false,

@@ -11,7 +11,7 @@
     "mysql": {
         "host": "localhost",
         "user": "coach",
-        "password": "coach@123",
+        "password": "coach@123$A",
         "database": "coaching_db"
     }
 }
