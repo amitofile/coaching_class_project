@@ -1,0 +1,27 @@
+{
+  "name": "coaching_class_project",
+  "version": "1.0.0",
+  "description": "NodeJS Application using ExpressJS to perform CRUD operation for coaching class using MySQL",
+  "main": "main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amit P",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "nodemon": "^2.0.7",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.30"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cluster": "^0.7.7",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "os": "^0.1.1"
+  }
+}

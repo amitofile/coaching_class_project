@@ -1,0 +1,17 @@
+{
+    "default": {
+        "api": "coaching class",
+        "version": "1.0.0",
+        "env": "development",
+        "server_instance": 4,
+        "port": 3000,
+        "secret": "jtrts561dsj654kxgrs61yk65u89h1d",
+        "expiry_min": 1
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "coach",
+        "password": "coach@123",
+        "database": "coaching_db"
+    }
+}
