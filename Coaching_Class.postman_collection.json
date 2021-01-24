@@ -1,0 +1,431 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Coaching_Class",
+		"_postman_id": "7b682067-9e75-0cfb-6281-e5d31c87a85d",
+		"description": "API for Coaching class project.\nBy, AMit P.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"url": "{{protocol}}://{{host}}:{{port}}/api/1.0.0/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "johns",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "john@123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "staff",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "login api"
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"url": "{{protocol}}://{{host}}:{{port}}/api/1.0.0/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstname",
+							"value": "John",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "S",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9876543211",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "johns",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "john@123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "staff",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "login api"
+			},
+			"response": [
+				{
+					"id": "73c33580-7b7e-4895-9b86-0209155f9314",
+					"name": "register_success",
+					"originalRequest": {
+						"url": "{{protocol}}://{{host}}:{{port}}/api/1.0.0/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstname",
+									"value": "John",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "S",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "john@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876543211",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "johns",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "john@123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "staff",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-headers",
+							"key": "access-control-allow-headers",
+							"value": "Content-Type, Authorization, X-Requested-With, accesstoken",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:3000",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "81",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 19 Jan 2021 07:26:26 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"51-x2JYVnM6yl2Cv6SuygCed5sE56I\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 824,
+					"body": "{\"status\":\"Success\",\"message\":\"Registered Successful\",\"result\":\"User Registered\"}"
+				},
+				{
+					"id": "bbd5accd-643d-4fc9-afb4-7e851c712bdb",
+					"name": "register_fail",
+					"originalRequest": {
+						"url": "{{protocol}}://{{host}}:{{port}}/api/1.0.0/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstname",
+									"value": "John",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "S",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "john@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876543211",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "johns",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "john@123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "staff",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-headers",
+							"key": "access-control-allow-headers",
+							"value": "Content-Type, Authorization, X-Requested-With, accesstoken",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:3000",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "323",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 19 Jan 2021 07:31:06 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"143-G96d+b/aMMEX6XnKRcUWvlEwJD0\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 845,
+					"body": "{\"status\":\"Error\",\"message\":{\"code\":\"ER_DUP_ENTRY\",\"errno\":1062,\"sqlMessage\":\"Duplicate entry '9876543211' for key 'staff.IDX_d744de529355248293e863f890'\",\"sqlState\":\"23000\",\"index\":0,\"sql\":\"INSERT INTO staff SET `firstName` = 'John', `lastName` = 'S', `emailId` = 'john@gmail.com', `mobileNo` = '9876543211'\"},\"result\":[]}"
+				}
+			]
+		},
+		{
+			"name": "addSubject",
+			"request": {
+				"url": "{{protocol}}://{{host}}:{{port}}/api/1.0.0/subject",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2hucyIsInNjb3BlIjoic3RhZmYiLCJpYXQiOjE2MTE1MTYxNDAsImV4cCI6MTYxMTUxOTc0MH0.UZDsrBXearyYqxy_XZS1hkSESQVeFQb9HQo23y7TRuc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "science",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "description",
+							"value": "abcd",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "totalstudents",
+							"value": "10",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "status",
+							"value": "active",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Add Subject"
+			},
+			"response": []
+		},
+		{
+			"name": "getSubject",
+			"request": {
+				"url": "{{protocol}}://{{host}}:{{port}}/api/1.0.0/subject",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2hucyIsInNjb3BlIjoic3RhZmYiLCJpYXQiOjE2MTE1MTYxNDAsImV4cCI6MTYxMTUxOTc0MH0.UZDsrBXearyYqxy_XZS1hkSESQVeFQb9HQo23y7TRuc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
