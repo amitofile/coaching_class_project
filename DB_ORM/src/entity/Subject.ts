@@ -20,7 +20,7 @@ export class Subject {
     createDate: string;
 
     @Column()
-    createById: number;
+    createById: string;
 
     @Column()
     totalIntake: number;

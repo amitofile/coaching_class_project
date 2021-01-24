@@ -21,7 +21,11 @@ Services.doLogin = function (req, res, result) {
         if (error) return result(error, null);
         if (typeof results[0] !== 'undefined' && typeof results[0]['status'] !== 'undefined') {
             if (results[0]['status'] == 'active') {
-                let jwt = functions.getJWT({ data: 'foo' });
+                let token = {
+                    sub: username,
+                    scope: userType
+                };
+                let jwt = functions.getAuth(token, 60);
                 con.end();
                 return result(null, { token: jwt });
             }

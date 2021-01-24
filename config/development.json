@@ -13,5 +13,26 @@
         "user": "coach",
         "password": "coach@123$A",
         "database": "coaching_db"
+    },
+    "authorize": {
+        "staff": {
+            "login": [
+                "POST"
+            ],
+            "subject": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ]
+        },
+        "student": {
+            "login": [
+                "POST"
+            ],
+            "subject": [
+                "GET"
+            ]
+        }
     }
 }

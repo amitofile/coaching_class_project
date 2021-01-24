@@ -31,6 +31,7 @@ if (parseInt(params.server_instance) === 1) {
     let server = app.listen((process.env.PORT || params.port), () => {
         console.log(`${params.api} server sterted in ${env} mode at http://${server.address().address}:${server.address().port} @${process.pid}`);
     });
+    
 
 } else {
     let instances = numCPUs;

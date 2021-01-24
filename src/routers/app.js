@@ -70,9 +70,9 @@ app.post(`/api/${params.version}/register`, function (req, res) {
 
 //---------------------------------------------------------------------------------------
 
-app.get(`/api/${params.version}/subject`, function (req, res) {
+app.get(`/api/${params.version}/subject`, functions.checkAuth, functions.authorize, function (req, res) {
   try {
-    console.log("Processing register request");
+    console.log("Processing get subject request");
     let services = require('../services/subject');
     services.getSubjects(req, res, (err, data) => {
       if (err) {
@@ -80,7 +80,7 @@ app.get(`/api/${params.version}/subject`, function (req, res) {
         return functions.setError(req, res, 401, err);
       }
       console.log(`Received JWT token ${data}`);
-      return functions.setResult(req, res, data, "Registered Successful");
+      return functions.setResult(req, res, data, "list Successful");
     });
   } catch (err) {
     console.log(`Error occured in API call : ${JSON.stringify(err)}`);
@@ -88,9 +88,9 @@ app.get(`/api/${params.version}/subject`, function (req, res) {
   };
 });
 
-app.post(`/api/${params.version}/subject`, function (req, res) {
+app.post(`/api/${params.version}/subject`, functions.checkAuth, functions.authorize, function (req, res) {
   try {
-    console.log("Processing register request");
+    console.log("Processing add subject request");
     let services = require('../services/subject');
     services.addSubjects(req, res, (err, data) => {
       if (err) {
@@ -98,7 +98,7 @@ app.post(`/api/${params.version}/subject`, function (req, res) {
         return functions.setError(req, res, 401, err);
       }
       console.log(`Received JWT token ${data}`);
-      return functions.setResult(req, res, data, "Registered Successful");
+      return functions.setResult(req, res, data, "Added Successfully");
     });
   } catch (err) {
     console.log(`Error occured in API call : ${JSON.stringify(err)}`);
@@ -106,9 +106,9 @@ app.post(`/api/${params.version}/subject`, function (req, res) {
   };
 });
 
-app.put(`/api/${params.version}/subject`, function (req, res) {
+app.put(`/api/${params.version}/subject/:id`, function (req, res) {
   try {
-    console.log("Processing register request");
+    console.log("Processing modify subject request");
     let services = require('../services/subject');
     services.updateSubjects(req, res, (err, data) => {
       if (err) {
@@ -124,9 +124,9 @@ app.put(`/api/${params.version}/subject`, function (req, res) {
   };
 });
 
-app.delete(`/api/${params.version}/subject`, function (req, res) {
+app.delete(`/api/${params.version}/subject/:id`, function (req, res) {
   try {
-    console.log("Processing register request");
+    console.log("Processing delete subject request");
     let services = require('../services/subject');
     services.removeSubjects(req, res, (err, data) => {
       if (err) {
